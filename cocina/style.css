@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=McLaren&family=Quicksand:wght@700&display=swap');
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}section{
+    overflow-x: hidden;
+}
+header{
+    height: 70px;
+}
+header nav ul {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+header nav li{
+    display: inline-block;
+    margin: 25px;
+    position: relative;  
+}
+
+header nav li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header nav li:hover::after{
+    width: 100%;
+    transition: 1s;
+}
+nav a{
+    color: pink;
+    margin: 40px;
+}
+.nav_logo{
+    height: auto;
+    width: 50px;
+    position: absolute;
+    top: 1%;
+}
+article{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 900px;
+    background-image: url(imagenes/strawberry-topped-cheesecake.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position-x:50% ;
+    filter: blur(1px);
+}
+.titulo{
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'pacifico', sans-serif;
+    font-size: 6em;     
+    text-shadow: 1px 1px 1px black;
+}
+.quienes{
+    background-image: url(imagenes/lily-banse--YHSwy6uqvk-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 910px;
+}
+.texto{
+    color: white;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.texto h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font: 30px "Lato", sans-serif;
+}
+.lorem{
+    margin: 40px;
+    font: 20px "Lato", sans-serif;
+}
+.quienestxt{
+    color: rgb(142, 226, 109);
+    letter-spacing: 2px;
+    font: 30px "Quicksand", sans-serif;
+}
+.destacados{
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+.destacados::after{
+    content: '';
+    background-color: #171717;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.destacados h1{
+    position: absolute;
+    top: 5%;
+    font-size: 35px;
+}
+.destacados div{
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+}
+.platosemana{
+    background: url(imagenes/como-hacer-berenjena-frita-crujiente.jfif);
+    background-size: cover;
+    background-position-y: -80px;
+    right: 60%;
+    border-radius: 5%;
+}
+.postresemana{
+    background-image: url(imagenes/avcerisboniato.jpg);
+    background-size: cover;
+    background-position: 0px, 40px;
+    left: 60%;
+    border-radius: 5%;
+}
+.destacados a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    left: 0%;
+    background-color: transparent;
+    border-radius: 5%;
+    transition: 0.4s;
+}.destacados a:hover{
+    transform: scale(1.10);
+}
+.beren{
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 80%;
+    right: 62%;
+    margin: 15px;
+}
+.bonia{
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 80%;
+    left: 67%;
+    margin: 10px;
+}
+.destacados p{
+    color: black;
+    font-size: 30px;
+    margin-right: 550px;
+    position: relative;
+    top: -35%;
+    left: 10%;
+}
+.platodelasemana{
+    overflow: hidden;
+    background-color: #171717;
+    position: relative;
+    width: 100%;
+    height: 800px;
+
+}
+.circuloplato{
+    position: absolute;
+    height: 90%;
+    width: 55%;
+    background-image: url(imagenes/berenjenas-con-miel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-position-x:-150px ;
+    right: -15%;
+    top: -90%;
+    border-color: white;
+    border-style: solid;
+    border-width: 20px;
+    z-index: 10;
+}
+.platodelasemanatxt{
+    width: 70%;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 0%;
+}
+.txtplatos{
+    position: relative;
+    left: 25%;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    width: 50%;
+    height: 100%;
+}
+.txtplatospaso{
+    position: relative;
+    left: 25%;
+    font-size: 25px;
+}
+#info{
+    position: relative;
+    left: 32%;
+    font-size: 30px;
+}
+.postredelasemana{
+    background-color: #171717;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+.circuloplato2{
+    position: absolute;
+    height: 90%;
+    width: 55%;
+    background-image: url(imagenes/patatas-frita-boniato-batata-horno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    left: -15%;
+    bottom: 10%;
+    border-color: white;
+    border-style: solid;
+    border-width: 20px;
+    z-index: 10;
+}
+.postresemanatxt{
+    width: 70%;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    right: 0%;
+}
+.txtpostre{
+    position: relative;
+    left: 25%;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    width: 50%;
+    height: 100%;
+}
+.txtplatospaso2{
+    position: relative;
+    left: 25%;
+    font-size: 25px;
+}
+.tureceta{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+.bgreceta{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-image: url(imagenes/mesero-portatil-gerente-restaurante-cafe-reunion-pequenas-empresas-empleados-presupuesto-financiero-o-inventario-trabajador-panaderia-cafeteria-planificacion-o-revision-estrategia-marketing-o-publi.png);
+    background-size: cover;
+    filter: blur(1px);
+}
+.titulotureceta{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 1px #171717;
+}
+.tureceta h1{
+    color: #171717;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+.lineaabajodetureceta{
+    width: fit-content;
+    position: relative;
+    left: 35%;
+}
+.inputs div{
+    display: inline;
+    margin: 15px;
+}
+.email input{
+    position: relative;
+    width: 80%;
+}
+.email{
+    width: 100%;
+}
+.formulario{
+    border: 2px solid black;
+    border-radius: 5%;
+    height: 53%;
+    width: 25%;
+    position: absolute;
+    background-color: white;
+    z-index: 5;
+}
+input, textarea{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+input{
+    display: inline;
+    width: 35%;
+    padding: 6px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #171717;
+    position: relative;
+    background-color: rgba(240, 240, 240, 0.25);
+}
+textarea{
+    position: relative;
+    left: 10%;
+    display: block;
+    border: 2px solid #171717;
+    width: 79%;
+}
+textarea::placeholder{
+    text-align: center;
+    font-size: 20px;
+    color: #171717;
+    font-family: 'Lobster', cursive;
+}
+.tureceta h2{
+    position: relative;
+    text-align: left;
+    left: 10%;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    color: #171717;
+    text-shadow: 1px 1px 1px white;
+    font-family: 'Lobster', cursive;
+}
+.sombraformulario{
+    border: 2px solid black;
+    border-radius: 5%;
+    height: 52%;
+    width: 25%;
+    position: absolute;
+    background-color: #171717;
+    left: 39%;
+    top: 27%;
+}
+.boton{
+    background-color: white;
+    width: 80%;
+    margin: 10px 0 0 0;
+    color: black;
+}
+.boton:hover{
+    background-color: #171717;
+    color: white;
+    transition: 0.5s;
+}
+.footer{
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 20px !important;
+    color: aliceblue !important;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 25;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lato' !important;
+}
